@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.google.com/specimen/Montserrat");
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      body {
+        background-color: hsl(30, 38%, 92%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .product_container {
+        display: flex;
+        border-radius: 4px;
+        height: 412px;
+        justify-content: center;
+        background-color: hsl(0, 0%, 100%);
+        width: 40%;
+      }
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 4px;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 30px;
+        gap: 20px;
+      }
+      .price {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 30px;
+      }
+      .content > p {
+        margin: 0;
+      }
+      .category {
+        display: flex;
+        justify-content: flex-start;
+        align-self: stretch;
+      }
+      .title {
+        font-size: 28px;
+        display: flex;
+        font-weight: bold;
+      }
+      h1.title {
+        margin: 0;
+      }
+      .description {
+        font-size: 14px;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+      }
+      .price > h1,
+      .price > h3 {
+        margin: 0;
+      }
+      .crossedPrice {
+        font-size: 14px;
+        text-decoration: line-through;
+        color: gray;
+      }
+      .addToCart {
+        border: none;
+        background: hsl(158, 36%, 37%);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        justify-content: center;
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px;
+      }
+      @media (max-width: 768px) {
+        .product_container {
+          display: flex;
+          border-radius: 4px;
+          height: 600px;
+          margin: 10px;
+          justify-content: flex-start;
+          flex-direction: column;
+          background-color: hsl(0, 0%, 100%);
+          width: 300px;
+        }
+        img {
+          max-width: 100%;
+          max-height: 40%;
+          display: flex;
+          justify-content: center;
+          align-self: stretch;
+          border-radius: 4px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product_container">
+      <img src="./images/image-product-desktop.jpg" alt="Product Image" />
+      <div class="content">
+        <span class="category"> PERFUME</span>
+        <h1 class="title">Gabrielle Essence Eau De Parfum</h1>
+        <p class="description">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="price">
+          <h1>$149.99</h1>
+          <h3 class="crossedPrice">$169.99</h3>
+        </div>
+        <button class="addToCart">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Nikhil Rachawar</a>.
+    </div>
+  </body>
+</html>
